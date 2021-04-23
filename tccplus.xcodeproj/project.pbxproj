@@ -26,6 +26,7 @@
 		09D8707A2429824B00FAB545 /* tccplus */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = tccplus; sourceTree = BUILT_PRODUCTS_DIR; };
 		09D8707D2429824B00FAB545 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		09D870842429826400FAB545 /* tccplus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tccplus.entitlements; sourceTree = "<group>"; };
+		95709E0626326C8B0045BB80 /* tccplusRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = tccplusRelease.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 		09D8707C2429824B00FAB545 /* tccplus */ = {
 			isa = PBXGroup;
 			children = (
+				95709E0626326C8B0045BB80 /* tccplusRelease.entitlements */,
 				09D8707D2429824B00FAB545 /* main.m */,
 				09D870842429826400FAB545 /* tccplus.entitlements */,
 			);
@@ -90,7 +92,8 @@
 		09D870722429824B00FAB545 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1110;
+				BuildIndependentTargetsInParallel = NO;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Jeremy Legendre";
 				TargetAttributes = {
 					09D870792429824B00FAB545 = {
@@ -154,6 +157,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -212,6 +216,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -241,8 +246,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = tccplus/tccplus.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G9T88PYL48;
+				DEVELOPMENT_TEAM = QZ4YLNF67Q;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -251,9 +257,10 @@
 		09D870832429824B00FAB545 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = tccplus/tccplus.entitlements;
+				CODE_SIGN_ENTITLEMENTS = tccplus/tccplusRelease.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G9T88PYL48;
+				DEVELOPMENT_TEAM = QZ4YLNF67Q;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
